@@ -1,0 +1,139 @@
+body {
+  background-image: url(assets/tile.jpg);
+}
+
+#rafael {
+  box-shadow: 1px 5px 10px 0px rgba(0, 0, 0, 0.4);
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(assets/formbg.jpg);
+  width: 45%;
+  height: 270px;
+  margin-top: 15px;
+  border-radius: 0.25rem;
+}
+#inputDetailes {
+  width: 80%;
+  height: 70px;
+  background-color: transparent;
+  font-family: inputs;
+  margin-left: 65px;
+  border: 1px solid gray;
+}
+
+#inputDate {
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  margin-left: 65px;
+  border: 1px solid gray;
+  text-align: right;
+}
+
+#inputTime {
+  width: 150px;
+  height: 30px;
+  background-color: transparent;
+  margin-left: 65px;
+  border: 2px solid gray;
+}
+
+@font-face {
+  font-family: headLine;
+  src: url(assets/CAROBTN_.TTF);
+}
+
+h1 {
+  font-size: xx-large;
+  font-family: headLine;
+}
+
+@font-face {
+  font-family: labels;
+  src: url(assets/Raleway-Bold.ttf);
+}
+label {
+  font-family: labels;
+  background-color: rgb(220, 53, 69);
+  font-size: 13px;
+  border-color: #dc3545;
+  border-radius: 0.25rem;
+  color: #fff;
+  display: inline;
+}
+
+@font-face {
+  font-family: inputs;
+  src: url(assets/Raleway-Bold.ttf);
+}
+.allNotes {
+  padding-top: 50px;
+  animation: fadeInLoad 1.5s;
+}
+
+#note {
+  background-image: url(assets/notebg.jpg);
+  width: 200px;
+  height: 240px;
+  display: inline-block;
+  padding-top: 15px;
+  margin-right: 56px;
+}
+#note:hover {
+  transform: scale(1.3);
+}
+#removeBtn {
+  float: right;
+}
+#noteId {
+  display: none;
+}
+
+#btnDiv {
+  text-align: center;
+  margin-top: 18px;
+}
+
+#note:nth-last-child(1) {
+  animation: fadeInLoad 1s;
+}
+@keyframes fadeInLoad {
+  from {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+i {
+  cursor: pointer;
+  float: right;
+  margin-right: 8px;
+  display: none;
+}
+i:hover {
+  color: #dc3545;
+}
+#note:hover i {
+  display: inline;
+}
+
+#detailPar {
+  word-break: break-all;
+  overflow-y: auto;
+  width: 140px;
+  margin: 5px;
+  height: 145px;
+  font-family: labels;
+}
+
+#datePar {
+  padding-top: 5px;
+}
